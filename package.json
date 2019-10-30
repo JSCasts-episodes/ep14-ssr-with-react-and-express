@@ -1,0 +1,31 @@
+{
+  "name": "ep13",
+  "version": "1.0.0",
+  "description": "jscasts episode 13",
+  "main": "index.js",
+  "author": "Wojeciech Krysiak",
+  "scripts": {
+    "dev": "DEV_ENV=true nodemon --ext '.js,.jsx' --ignore 'dist' index.js",
+    "start": "node index.js",
+    "types": "tsc",
+    "build": "babel src --out-dir lib --copy-files --extensions '.js,.jsx'"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/runtime": "^7.6.3",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@babel/register": "^7.6.2",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "typescript": "^3.6.4"
+  }
+}
